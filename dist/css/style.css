@@ -102,6 +102,10 @@
   height: 800px;
 }
 
+canvas.pg-canvas {
+  opacity: .6;
+}
+
 .transition {    
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
