@@ -7,8 +7,9 @@ $(document).ready(function() {
 
   //particles
   $('#intro').particleground({
-    dotColor: '#154866',
-    lineColor: '#66757f'
+    dotColor: '#fff',
+    lineColor: '#fff',
+    parallax: 'true'
   });
   $('.intro').css({
     'margin-top': -($('.intro').height() / 2)

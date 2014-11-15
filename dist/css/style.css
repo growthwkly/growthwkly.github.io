@@ -61,132 +61,6 @@
   right: 100px;
 }
 
-/*.navbar-default {
-  border: none;
-  background: transparent;
-  margin-bottom: -50px;
-  z-index: 20;
-}
-
-
-
-.navbar-default .navbar-brand,
-.navbar-default .navbar-nav>li>a {
-  color: #0684b4;
-  font-size: 14px;
-}
-
-.navbar > .container .navbar-brand {
-  margin-left: 50px;
-}
-
-.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a:focus,
-a.navbar-brand:hover {
-  color: #05729b;
-  font-size: 14px;
-}
-
-.btn-primary {
-  padding: 10px 12px;
-  width: 180px;
-  color: #fff;
-  background-color: #05729b;
-  border-color: #05729b;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-  background-color: #1e6690;
-  border-color: #1e6690;
-}
-
-a {
-  color: #05729b;
-}
-
-a:hover {
-  color: #1e6690;
-}
-
-.hexagon {
-   position: absolute;
-   overflow: hidden;
-  width: 3em; height: 3em;
-  -webkit-transform: rotate(-30deg) skewX(30deg) scaleY(.866);
-  margin-right: 18px;
-  top: 7px;
-}
-
-.hexagon:before {
-  position: absolute;
-  right: 6.7%; bottom: 0; left: 6.7%; top: 0;
-  -webkit-transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
-  background: #154866;
-  color: #154866;
-  font: 1em/10 Verdana, sans-serif;
-  text-align: center;
-  content: 'none';
-}
-
-.hex-footer {
-   position: relative;
-   overflow: hidden;
-  width: 2.2em; height: 2.2em;
-  -webkit-transform: rotate(-30deg) skewX(30deg) scaleY(.866);
-}
-
-.hex-footer:before {
-  position: absolute;
-  right: 6.7%; bottom: 0; left: 6.7%; top: 0;
-  -webkit-transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
-  background: #154866;
-  color: #154866;
-  font: 1em/10 Verdana, sans-serif;
-  text-align: center;
-  content: 'none';
-}
-
-#hex-1 {
-  left: -180px;
-}
-
-#hex-2 {
-  left: -150px;
-}
-
-#hex-3 {
-  left: -120px;
-}
-
-/*.hexagon:hover:before {
-  background: #FFF;
-  color: #154866;
-}
-
-.hex-fa {
-  color: #fff;
-  position: absolute;
-  top: 22px;
-}
-
-#fa-0 {
-  margin-left: -180px;
-}
-
-#fa-1 {
-  margin-left: -152px;
-}
-
-#fa-2 {
-  margin-left: -122px;
-}*/
-
 .lead {
   font-size: 18px;
 }
@@ -216,14 +90,14 @@ a:hover {
   background-color: transparent;
 }
 
+.jumbotron {
+  padding-bottom: 0px;
+}
 
 #intro {
-  position: relative;
   text-shadow: 0 1px 0 #10354a;
-  background: #154866;
-  background: radial-gradient(circle farthest-side at right bottom,#fff 8%,#154866 70%,#000);
-  height: 610px;
-  overflow: hidden;
+  background: #000;
+  height: 800px;
 }
 
 .transition {    
@@ -257,27 +131,68 @@ a:hover {
   font-weight: 100;
 }
 
-.profile-block {
-  width: 463px;
-  height: 786px;
-  margin-left: 60px;
-  margin-top: 60px;
-  background: transparent;
-  background-image: url('https://stripe.com/img/checkout/marketing/header-animation/mobile-flow/iphone5s.png');
-  background-size: 80%;
-  background-repeat: no-repeat;
+.sign-up-wrapper {
+  top: 300px;
+  width: 48em;
+  height: 6em;
+  background-color: rgba(255,255,255,0.15);
   position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.15em 2.33em;
+  border-radius: 5px;
 }
 
-.profile-details {
-  background-image: url('https://s3-us-west-1.amazonaws.com/adamdaigian/adam_about_placeholder_flat.png');
-  background-size: 100%;
+.sign-up-action {
   position: relative;
-  background-repeat: no-repeat;
-  margin-top: 108px;
-  margin-left: 28px;
-  height: 100%;
-  width: 317px;
+  margin: -.3em 1.67em;
+}
+
+input.sign-up-email {
+  width: 67% !important;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin: 0 -6px !important;
+  padding-top: 0 !important;
+  font-size: 1em !important;
+  padding-bottom: 0 !important;
+  border-width: 2px !important;
+  border-color: #fff !important;
+  padding: 0.5em 1em !important;
+  border-style: solid !important;
+}
+
+input.sign-up-email[placeholder] {
+  color: #000;
+}
+
+::-webkit-input-placeholder {
+   color: black;
+}
+
+::-webkit-input:focus {
+  border: 0px !important;
+  box-shadow: 0px !important;
+  -webkit-box-shadow: 0px !important;
+  -moz-box-shadow: 0px !important;
+  transition: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+}
+
+button.sign-up-continue {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff;
+  background: #000 !important;
+  margin: 0 !important;
+  padding-top: 0 !important;
+  font-size: 1em !important;
+  padding-bottom: 0 !important;
+  border-width: 2px !important;
+  border-color: #fff !important;
+  padding: 0.5em 1em !important;
+  border-style: solid !important;
 }
 
 .block-0,
@@ -289,11 +204,6 @@ a:hover {
 .block-0 {
   margin-top: -30px;
   padding: 10px 0px 70px 0px;
-}
-
-.elasticbox .logo {
-  width: 260px;
-  margin: 30px auto;
 }
 
 .lead {
