@@ -94,6 +94,7 @@
   padding-bottom: 0px;
   padding-right: 0px;
   padding-left: 0px;
+  padding-top: 0px;
 }
 
 #intro {
@@ -103,7 +104,7 @@
 }
 
 canvas.pg-canvas {
-  opacity: .6;
+  opacity: .5;
 }
 
 .transition {    
@@ -136,23 +137,36 @@ canvas.pg-canvas {
   font-weight: 100;
 }
 
+.copy {
+  position: absolute;
+  text-align: center;
+  top: 160px;
+  width: 60%;
+  left: 20%;
+}
+
+.copy > .lead {
+  margin: 20px auto;
+  width: 80%;
+}
+
 .sign-up-wrapper {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  top: 300px;
+  top: 360px;
   left: 0;
   right: 0;
-  width: 48em;
-  height: 7.4em;
+  width: 35em;
+  height: 7.6em;
   background-color: rgba(255,255,255,0.15);
-  padding: 2.15em 2.33em;
+  padding: 2.20em 2.33em;
   border-radius: 5px;
 }
 
 .sign-up-action {
   position: relative;
-  margin-left: 7%;
+  margin-left: 4%;
 }
 
 input.sign-up-email {
@@ -160,12 +174,12 @@ input.sign-up-email {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   margin: 0 -6px !important;
-  padding-top: 0 !important;
+  line-height: 100%;
   font-size: 1em !important;
   padding-bottom: 0 !important;
   border-width: 2px !important;
   border-color: #fff !important;
-  padding: 0.5em 1em !important;
+  padding: 20px !important;
   border-style: solid !important;
   font-family: 'proxima-nova' Helvetica Neue, Open Sans, sans-serif;
 }
@@ -201,7 +215,7 @@ button.sign-up-continue {
   padding-bottom: 0 !important;
   border-width: 2px !important;
   border-color: #fff !important;
-  padding: 0.5em 1em !important;
+  padding: 10px !important;
   border-style: solid !important;
   font-family: 'proxima-nova' Helvetica Neue, Open Sans, sans-serif;
 }
@@ -222,15 +236,7 @@ button.sign-up-continue {
   text-align: center;
   font-family: 'proxima-nova' sans-serif;
   font-weight: 100;
-  color: #66757f; 
-}
-
-.copy {
-  position: absolute;
-  text-align: center;
-  width: 70%;
-  top: 20%;
-  left: 15%;
+  color: #000; 
 }
 
 .white {
@@ -302,9 +308,6 @@ button.sign-up-continue {
   color: #fff;
 }
 
-.resume .btn-resume {
-  margin: 20px auto;
-}
 
 .showcase {
   padding-top: 60px;
@@ -317,29 +320,11 @@ button.sign-up-continue {
   padding-top: 40px;
 }
 
-ul.hex-list > li {
-  list-style: none;
-  padding-bottom: 0px;
-  height: 44px;
-  width: 20%;
-}
-
 .fa-footer {
   left: 10px;
   top: -26px;
   position: relative;
   color: #fff;
-}
-
-.footer-hex-text {
-  position: relative;
-  left: 50px;
-  top: -47px;
-}
-
-.footer-hex-text {
-  color: #154866;
-  text-decoration: underline;
 }
 
 .title-footer {
@@ -376,29 +361,29 @@ ul.hex-list > li {
   color: #fff;
 }
 
-.advisor {
+.expect {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.advisor .fa-consult {
-  color: #154866;
+.expect .fa-consult {
+  color: #000;
 }
 
-.advisor-title {
-  font-family: 'adelle' sans-serif;
+.expect-title {
+  font-family: 'proxima-nova' sans-serif;
   font-weight: 200;
   font-size: 20px;
   padding-bottom: 20px;
-  color: #292f33;
+  color: #000;
 }
 
-.advisor .lead {
+.expect .lead {
   padding-bottom: 60px;
 }
 
 .title {
-  color: #292f33; 
+  color: #000; 
   font-family: 'adelle' sans-serif;
   font-weight: 200;
 }
@@ -429,7 +414,7 @@ ul.hex-list > li {
   bottom: 0;
   height: 0px;
   width: 100%;
-  border-bottom: 2px solid #154866;
+  border-bottom: 2px solid #000;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
