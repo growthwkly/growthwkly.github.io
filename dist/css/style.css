@@ -188,11 +188,11 @@ input.sign-up-email[placeholder] {
   color: #000;
 }
 
-button:focus, input:focus, textarea:focus, keygen:focus, select:focus {
+input:focus, input:focus, textarea:focus, keygen:focus, select:focus {
 outline-offset: 0px;
 }
 
-button:focus,
+input:focus,
 input:focus {
 outline: -webkit-focus-ring-color auto 0px;
 outline-color: -webkit-focus-ring-color;
@@ -204,7 +204,10 @@ outline-width: 0px;
    color: black;
 }
 
-button.sign-up-continue {
+input.sign-up-continue {
+  position: absolute;
+  right: 11px;
+  top: 0px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   color: #fff;
