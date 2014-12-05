@@ -5,7 +5,11 @@
 }
 
 .navbar-brand {
-  height: 58px;
+  margin-top: 20px;
+  padding-right: 200px;
+  height: 46px;
+  background-image: url('../../img/growthwkly_logo_black.svg');
+  background-repeat: no-repeat;
 }
 
 .navbar-default {
@@ -32,10 +36,6 @@
   color: #007cf4;
   border-bottom: 4px solid #007cf4;
   border-bottom-width: 80%;
-}
-
-.navbar-brand {
-  padding-right: 40px;
 }
 
 .navbar-btn {
@@ -145,7 +145,19 @@ canvas.pg-canvas {
   left: 20%;
 }
 
-.copy > .lead {
+.copy > .logo {
+  height: 60px;
+  width: 57%;
+  margin: 0 auto;
+  background-image: url('../../img/growthwkly_logo_white.svg');
+  background-repeat: no-repeat;
+}
+
+.logo {
+  height: 60px;
+}
+
+.copy h2.lead {
   margin: 20px auto;
   width: 80%;
 }
