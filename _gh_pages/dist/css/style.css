@@ -12,13 +12,19 @@
   background-repeat: no-repeat;
 }
 
+.navbar>.container .navbar-brand {
+  margin-left: -45px;
+}
+
 .navbar-default {
   background:transparent;
   border-bottom:none !important;
+  visibility: hidden;
 }
 
-.navbar-fill {
-  border-bottom: solid 1px #edeeef !important;
+.navbar-display {
+  visibility: visible; 
+  border-bottom: solid 1px #DDDDDD !important;
   background-color: #FFFFFF;
   transition: background 0.3s ease;
   -webkit-transition: background 0.3s ease;
@@ -153,6 +159,14 @@ canvas.pg-canvas {
   background-repeat: no-repeat;
 }
 
+.logo-footer {
+  height: 30px;
+  width: 170px;
+  margin: 17px auto;
+  background-image: url('../../img/growthwkly_logo_white.svg');
+  background-repeat: no-repeat;
+}
+
 .logo {
   height: 60px;
 }
@@ -196,6 +210,21 @@ input.sign-up-email {
   font-family: 'proxima-nova' Helvetica Neue, Open Sans, sans-serif;
 }
 
+input.sign-up-email-nav {
+  width: 200px !important;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin: 13px -306px !important;
+  line-height: 100%;
+  font-size: 1em !important;
+  padding-bottom: 0 !important;
+  border-width: 2px !important;
+  border-color: #000 !important;
+  padding: 10px !important;
+  border-style: solid !important;
+  font-family: 'proxima-nova' Helvetica Neue, Open Sans, sans-serif;
+}
+
 input.sign-up-email[placeholder] {
   color: #000;
 }
@@ -231,6 +260,24 @@ input.sign-up-continue {
   border-width: 2px !important;
   border-color: #fff !important;
   padding: 10px !important;
+  border-style: solid !important;
+  font-family: 'proxima-nova' Helvetica Neue, Open Sans, sans-serif;
+}
+
+input.sign-up-continue-nav {
+  position: absolute;
+  top: 13px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff;
+  background: #000 !important;
+  margin: 0 -110px !important;
+  padding-top: 0 !important;
+  font-size: 1em !important;
+  padding-bottom: 0 !important;
+  border-width: 2px !important;
+  border-color: #000 !important;
+  padding: 8px !important;
   border-style: solid !important;
   font-family: 'proxima-nova' Helvetica Neue, Open Sans, sans-serif;
 }
@@ -331,8 +378,8 @@ input.sign-up-continue {
 
 .footer {
 /*  background-color: #f5f7f9;*/
-  background-color: #f2f6fa;
-  padding-top: 40px;
+  background-color: #000;
+  padding-top: 10px;
 }
 
 .fa-footer {
@@ -362,11 +409,11 @@ input.sign-up-continue {
   background-size: 100%;
 }
 
-.footer-base {
+/*.footer-base {
   border-top: 2px solid #dfe9f3;
   padding-bottom: 40px;
   margin-top: -1px;
-}
+}*/
 
 .blue {
   color: #154866;
@@ -378,7 +425,7 @@ input.sign-up-continue {
 
 .expect {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 140px;
 }
 
 .expect .fa-consult {

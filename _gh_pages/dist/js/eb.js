@@ -21,10 +21,9 @@ $(document).ready(function() {
     jQuery(window).scroll(function() {    
         var scroll = jQuery(window).scrollTop();
         if (scroll >= 15) {
-         console.log('hello')
-         menu.addClass("navbar-fill");
-    } else {
-        menu.removeClass("navbar-fill");
+          menu.addClass("navbar-display");
+        } else {
+          menu.removeClass("navbar-display");
         }
     });
   });
